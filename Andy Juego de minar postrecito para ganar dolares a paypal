@@ -1,0 +1,23 @@
+// Codigo Javascript para un videojuego de minar postrecitos y ganar dinero para PayPal con opcion de retiro instantaneo metodo level up
+
+// Definir variables
+var postrecitoMined = 0;
+var dineroGanado = 0;
+var nivelActual = 1;
+
+// Funcion para minar postrecitos
+function minePostrecitos() {
+  postrecitoMined++;
+  dineroGanado += nivelActual * 10;
+  if (postrecitoMined % 10 == 0) {
+    nivelActual++;
+  }
+}
+
+// Funcion para retirar dinero
+function retirarDinero() {
+  if (dineroGanado >= 100) {
+    // Enviar dinero a PayPal
+    // Restar dinero enviado de dineroGanado
+  }
+}
